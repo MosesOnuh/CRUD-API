@@ -8,7 +8,7 @@ import (
 
 func main() {
 	router := gin.Default()
-	router.GET("/Nice", helloWorldhandler)
+	router.GET("/", helloWorldhandler)
 
 	port := os.Getenv("PORT")
 	if port == "" {
